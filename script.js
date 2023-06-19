@@ -1,18 +1,20 @@
+//создаем массивы городов и температуры
 let cities = ['Москва', 'Санкт-Петербург', 'Нью-Йорк', 'Токио'];
 let temperatures = [];
 
-
+//используем цикл для наполнения массива с температурой
 for (let city of cities) {
 let result = prompt(`Температура в ${city}`);
 temperatures.push(result);
-//console.log(temperatures);
 };
 
-
-//НЕ РАБОТАЕТ//
-for (let i = 0; i < cities.lenght; i++) {
+//создаем список 
+for (let i = 0; i < 4; i++) {
     let ul = document.getElementById('listOfCities');
     let li = document.createElement('li');
-	li.textContent = `${cities[i]+temperatures[i]}`;
+	li.textContent = `Температура в ${cities[i]}: ${temperatures[i]} °C`;
 	ul.appendChild(li);
 }
+
+//сортируем массив 
+

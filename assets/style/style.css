@@ -1,0 +1,14 @@
+
+body {
+    font-family: 'Caveat', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(73,66,61);
+    background-color: rgb(229,228,226);
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
+}
