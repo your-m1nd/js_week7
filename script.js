@@ -26,6 +26,23 @@ for (let i = 0; i < 4; i++) {
 	ul.appendChild(li);
 }
 
+for (let i =0; i<1; i++) {
+    let div = document.getElementById('higherTemperature');
+let p = document.createElement('p');
+p.textContent = `Максимальная температура: ${higherTemperature}°C`;
+div.appendChild(p);
+}
+
+for (let i =0; i<1; i++) {
+    let div = document.getElementById('higherTemperature');
+let p = document.createElement('p');
+p.textContent = `Минимальная температура: ${lowerTemperature}°C`;
+div.appendChild(p);
+}
+
+
+
+
 
 
 
