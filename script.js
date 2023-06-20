@@ -8,6 +8,16 @@ let result = prompt(`Температура в ${city}`);
 temperatures.push(result);
 };
 
+//сортируем массив
+
+let sortTemperatures = temperatures.sort(((a, b) => a - b));
+
+//находим максимальную температуру
+let higherTemperature = sortTemperatures[sortTemperatures.length - 1];
+
+//находим минимальную температуру
+let lowerTemperature = sortTemperatures[0];
+
 //создаем список 
 for (let i = 0; i < 4; i++) {
     let ul = document.getElementById('listOfCities');
@@ -16,5 +26,7 @@ for (let i = 0; i < 4; i++) {
 	ul.appendChild(li);
 }
 
-//сортируем массив 
+
+
+
 
