@@ -18,7 +18,7 @@ let higherTemperature = sortTemperatures[sortTemperatures.length - 1];
 //находим минимальную температуру
 let lowerTemperature = sortTemperatures[0];
 
-//создаем список 
+//создаем список
 for (let i = 0; i < 4; i++) {
     let ul = document.getElementById('listOfCities');
     let li = document.createElement('li');
