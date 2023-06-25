@@ -19,22 +19,22 @@ let higherTemperature = sortTemperatures[sortTemperatures.length - 1];
 let lowerTemperature = sortTemperatures[0];
 
 //создаем список
-for (let i = 0; i < 4; i++) {
-    let ul = document.getElementById('listOfCities');
-    let li = document.createElement('li');
-	li.textContent = `Температура в ${cities[i]}: ${temperatures[i]} °C`;
-	ul.appendChild(li);
+for (let i = 0; i < cities.length; i++) {
+let ul = document.getElementById('listOfCities');
+let li = document.createElement('li');
+li.textContent = `Температура в ${cities[i]}: ${temperatures[i]} °C`;
+ul.appendChild(li);
 }
 
-for (let i =0; i<1; i++) {
-    let div = document.getElementById('higherTemperature');
+for (let i = 0; i < 1; i++) {
+let div = document.getElementById('higherTemperature');
 let p = document.createElement('p');
 p.textContent = `Максимальная температура: ${higherTemperature}°C`;
 div.appendChild(p);
 }
 
 for (let i =0; i<1; i++) {
-    let div = document.getElementById('higherTemperature');
+let div = document.getElementById('higherTemperature');
 let p = document.createElement('p');
 p.textContent = `Минимальная температура: ${lowerTemperature}°C`;
 div.appendChild(p);

@@ -18,7 +18,7 @@ numbers.sort(((a, b) => b - a));
 
 //убираем повторяющиеся значения
 let newArr = [];
-for (let i = 0; i < numbers.length; i++) {
+for (let i in numbers) {
   if (!newArr.includes(numbers[i])) {
     newArr.push(numbers[i]);
   }
@@ -26,7 +26,9 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(newArr);
 
 
-
+//for (let i in numbers) - в цикле переменная i принимает индексы массива numbers, а не значения
+//фильтрацию можно сделать с помощью метода filter: 
+//let newArr = numbers.filter((value, index) => numbers.indexOf(value) === index);
 
 
 
